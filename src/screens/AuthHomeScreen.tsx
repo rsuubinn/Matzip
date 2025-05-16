@@ -1,7 +1,11 @@
+import {StackScreenProps} from '@react-navigation/stack';
 import React from 'react';
-import {Button, SafeAreaView, StyleSheet, View} from 'react-native';
+import {Button, SafeAreaView, View} from 'react-native';
+import {AuthStackParamList} from '../navigation/AuthStackNavigator';
 
-function AuthHomeScreen({navigation}) {
+type AuthHomeScreenProps = StackScreenProps<AuthStackParamList>;
+
+function AuthHomeScreen({navigation}: AuthHomeScreenProps) {
   return (
     <SafeAreaView>
       <View>
@@ -13,7 +17,5 @@ function AuthHomeScreen({navigation}) {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({});
 
 export default AuthHomeScreen;
