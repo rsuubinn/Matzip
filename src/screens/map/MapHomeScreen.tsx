@@ -1,9 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-interface MapHomeScreenProps {}
-
-const MapHomeScreen = ({}: MapHomeScreenProps) => {
+const MapHomeScreen = () => {
   return (
     <View>
       <Text>맵 홈 스크린</Text>
