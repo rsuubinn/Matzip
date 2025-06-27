@@ -3,7 +3,7 @@ import React from 'react';
 import AuthHomeScreen from '../../screens/auth/AuthHomeScreen';
 import LoginScreen from '../../screens/auth/LoginScreen';
 import SignupScreen from '../../screens/auth/SignupScreen';
-import { authNavigations } from '../../constants';
+import { authNavigations, colors } from '../../constants';
 
 export type AuthStackParamList = {
   [authNavigations.AUTH_HOME]: undefined;
@@ -28,6 +28,9 @@ function AuthStackNavigator({}) {
         component={LoginScreen}
         options={{
           headerTitle: '로그인',
+          cardStyle: {
+            backgroundColor: colors.WHITE,
+          },
         }}
       />
       <Stack.Screen
