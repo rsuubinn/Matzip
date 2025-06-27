@@ -38,6 +38,9 @@ function AuthStackNavigator({}) {
         component={SignupScreen}
         options={{
           headerTitle: '회원가입',
+          cardStyle: {
+            backgroundColor: colors.WHITE,
+          },
         }}
       />
     </Stack.Navigator>
