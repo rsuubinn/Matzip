@@ -1,7 +1,2 @@
-const authNavigations = {
-  AUTH_HOME: 'AuthHome',
-  LOGIN: 'Login',
-  SIGNUP: 'Signup',
-};
-
-export { authNavigations };
+export * from './colors';
+export * from './navigations';
